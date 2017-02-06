@@ -1,0 +1,25 @@
+Create Table friends(
+  id Integer,
+  name Text,
+  birthday Text
+);
+
+Insert into friends(id,name,birthday) Values(1,'Jane Doe','May 19th,1993');
+
+Insert into friends(id,name,birthday) Values(2,'Tom Doe','October 19th,2000');
+Insert into friends(id,name,birthday) Values(3,'Jack Doe','January 19th,1998');
+Insert into friends(id,name,birthday) Values(4,'Anne Doe','March 19th,1980');
+
+Update friends
+set name = 'Jane Smith'
+Where id = 1;
+
+Alter Table friends Add Column email Text;
+
+Update friends
+set email= 'jdoe@example.com'
+Where id = 1;
+
+Delete From friends Where id =1;
+
+Select * From friends;
