@@ -1,0 +1,57 @@
+1.Select Distinct year From movies
+
+2.Select Distinct year From movies
+  Order by year;
+
+3.Delete From movies where genre = 'drama';
+  Select * From movies;
+
+4.Select * From movies where name Like '%bride%';
+
+5.Select * From movies Where year Between '2000' and '2015';
+
+6.Select * From movies Where year=1995 Or  imdb_rating = 9;
+
+7.Select name,imdb_rating From movies Where year>1996
+  Order by name;
+
+8.Select * From movies Where imdb_rating =7
+  Limit 3;
+
+9.Select * From movies Where imdb_rating >6 and genre = 'comedy' and year >1995
+  Order by imdb_rating Desc
+  Limit 10;
+
+10.Select * From movies Where name = 'Cast Away';
+
+11.Select * From movies Where imdb_rating != 7;
+
+12.Select * From movies Where imdb_rating <6 and genre = 'horror';
+
+13.Select * From movies Where imdb_rating >8
+   Order by genre
+   Limit 10;
+
+14.Select * From movies Where name Like '%King' ;
+
+15.Select * From movies Where name Like '%out' ;
+
+16.Select * From movies Where name Like 'The%' 
+   Order by imdb_rating desc;
+
+17.Select * From movies;
+
+18.Select name,id From movies Where id >125;
+
+19.Select * From movies Where name Like 'X-Men%';
+
+20.Select * From movies
+   Order by name desc
+   Limit 10;
+
+21.Select id,name,genre From movies where genre = 'romance';
+
+22.Select * From movies where name Like '%Twilight%'
+   Order by year ;
+
+23.Select * From movies where year=2012 and genre = 'comedy';
