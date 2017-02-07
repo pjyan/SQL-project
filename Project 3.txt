@@ -1,0 +1,59 @@
+1.select count(*) from fake_apps;
+
+2.select name,category,price,min(downloads) from fake_apps;
+
+3.select category,count(*) from fake_apps
+  group by category;
+
+4.select name,category,max(downloads) from fake_apps;
+
+5.select name,category,min(downloads) from fake_apps;
+
+6.select category,avg(price) from fake_apps
+  group by category;
+
+7.select category,round(avg(price),2) from fake_apps
+  group by category;
+
+8.select max(price) from fake_apps;
+
+9.select min(downloads) from fake_apps;
+
+10.select sum(downloads) from fake_apps
+   where category = 'Games';
+
+11.select count(*) from fake_apps
+   where price = 0;
+
+12.select count(*) from fake_apps
+   where price = 14.99;
+
+13.select sum(downloads) from fake_apps
+   where category = 'Music';
+
+14.select sum(downloads) from fake_apps
+   where category = 'Business';
+
+15.select category,count(*) from fake_apps
+   group by category;
+
+16.select price,avg(downloads) from fake_apps
+   group by price;
+
+17.select price,round(avg(downloads)) from fake_apps
+   group by price;
+
+18.select name,category,max(price) from fake_apps
+   group by category;
+
+19.select count(*) from fake_apps
+   where name Like 'A%';
+
+20.select sum(downloads) from fake_apps
+    where category = 'Sports' or category ='Health & Fitness';
+
+
+
+
+
+
